@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: If you use this fork, please cite it using these metadata and identify the
+  commit or release used. Upstream attribution is recorded in references.
+title: Conan Center Index
+authors:
+- name: Conan.io
+- name: Conan Center Index contributors
+repository-code: https://github.com/edithatogo/conan-center-index
+url: https://github.com/edithatogo/conan-center-index
+references:
+- type: software
+  title: Conan Center Index
+  authors:
+  - name: Conan.io
+  - name: Conan Center Index contributors
+  repository-code: https://github.com/conan-io/conan-center-index
+  url: https://github.com/conan-io/conan-center-index
