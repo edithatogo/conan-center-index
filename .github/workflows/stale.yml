@@ -10,6 +10,9 @@ on:
   schedule:
   - cron: '34 6 * * *'
 
+permissions:
+  contents: read
+
 jobs:
   stale:
     if: github.repository == 'conan-io/conan-center-index'
@@ -21,6 +24,11 @@ jobs:
 
 
     steps:
+    - name: Harden the runner (Audit all outbound calls)
+      uses: step-security/harden-runner@v2
+      with:
+        egress-policy: audit
+
     - uses: actions/stale@5f858e3efba33a5ca4407a664cc011ad407f2008 # v10.1.0
       with:
         # Do not make issues as stale
